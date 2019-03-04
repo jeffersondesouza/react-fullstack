@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npm start --prefix server",
-    "client": "npm run start:dev --prefix client",
+    "server": "npm start --prefix server-side",
+    "client": "npm run start:dev --prefix webapp",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
