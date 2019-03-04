@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const SurveyNew = () => (
-  <div>
-    <h1>SurveyNew</h1>
-  </div>
-);
+class SurveyNew extends Component {
+  render() {
+    return (
+      <div>
+        <h1>SurveyNew</h1>
+      </div>
+    );
+  }
+}
 
-export default SurveyNew;
+function mapStateToProps({ auth }) {
+  return { auth };
+}
+
+export default connect(mapStateToProps)(SurveyNew);

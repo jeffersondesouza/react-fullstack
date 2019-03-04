@@ -12,12 +12,10 @@ class App extends Component {
 
 
   componentDidMount() {
-    // call api
     this.props.fetchUser();
   }
 
   render() {
-    console.log('oi');
     
     return (
       <div className="container">
